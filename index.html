@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour your world</title>
+    <link rel="shortcut icon" href="https://www.bing.com/th?id=OIP.QztRqisRVg6BREqFWQp3CwHaHa&w=204&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #contact {
+    background: tomato;
+    color: white;
+    border-radius: 4px;
+    
+  }
+ 
+  #indiaoffice {
+    text-align: center;
+    font-size: 70px;
+    color: tomato;
+  }
+  .offices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .box1 {
+    background: #000000;
+    color: white;
+    height: 18vh;
+    width: 20vw;
+    margin: 4vh 4vw;
+    padding: 2px 10px;
+    border-radius: 5px;
+    transition: .7s;
+    box-shadow: rgba(0, 0, 0, 0.5);
+  }
+  .box1:hover {
+    border: 2px solid tomato;
+    background: #f4f4f4;
+    color: black;
+    cursor: pointer;
+   transform: scale(1.2);
+  }
+  @media screen and (max-width:768px) {
+    .countryselect {
+    /*  */
+    height: 40px;
+    width: 160px;
+    margin-bottom: -9px;
+    margin-top: -19px;
+  }
+  .maps{
+    margin-left: 2vw;
+  }
+  .maps iframe{
+    width: 94vw;
+  }
+}
+  @media screen and (max-width:540px){
+    .search{
+      display: flex;
+     flex-direction: column;
+    align-items: center;}
+  }
+  .offices{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .offices::-webkit-scrollbar{
+    width: 0;
+  }
+  .box1{min-width:200px;}
+  .countryselect {
+    margin-bottom: -9px;
+    margin-top: -19px;
+  }
+</style>
+<body>
+    <header>
+     
+        <img src="https://www.yatra.com/fresco/resources/beetle/images/newIcons/yatra_logo.svg" alt="logo" align="center" height="30px"
+            width="129 px" class="yatra" style="margin: 0 auto 0 auto;">
+        <div class="navihead">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+            <ul>
+                <li><a href="visa.html" class="contact">About Us</a></li>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="visa.html">Visa Cheak</a> </li>
+            </ul>
+            <hr class="hr">
+        <nav class="navifoot">
+          <input type="checkbox" id="check" />
+            <ul>
+                <h1>শুধুমাত্র নতুন টিকিট করতে অথবা তারিখ পরিবর্তন করতে ফোন করুন (WhatsApp message) <a href="tel:+8801722270001" class="cool-link">01722270001</a></h1>
+            </ul>
+        </nav>
+        </div>
+       
+        <section></section>
+    </header>
+    <main>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <a href="#">
+            <img src="https://www.sotc.in/images/home-page-banners/2021/june/Maldives-Banner1-1920x545.webp" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+              <a href="#">
+            <img src="https://www.sotc.in/images/home-page-banners/2021/august/CordeliaCruises-Home-Banner-1-1920x545.webp" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+              <a href="#">
+            <img src="https://www.sotc.in/images/home-page-banners/2021/july/Forex-BN-Study-Home-Banner-1920x545.webp" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+              <a href="#">
+            <img src="https://www.sotc.in/images/home-page-banners/2021/august/Europe-Holiday-Home-Banner-1-1920x545.webp" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+          <img src="https://www.sotc.in/images/home-page-banners/2021/august/Bogo-Offer-Home-Banner-1920x545.webp" class="d-block w-100" alt="..."></a>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <p id="indiaoffice">All Air Lines in Bangladeh</p>
+        <div class="offices">
+          <a href="Info/Turkish.html">
+          <div class="box1">Air Arabia<br>Mobile: +88 02 9145052 <br> Address- Jahangir Tower, Karwan Bazar,Dhaka </div>
+          </a>
+          <div class="box1">Air Asia<br>Mobile: +88 02 9821447 <br> Address- Erectors House, Banani, Dhaka 1213 </div>
+          <div class="box1">Air Canada<br>Mobile: +88 02 985458283 <br> Address- Union Centre,68/1, 5th Floor,Gulshan Dhaka </div>
+        </div>
+          <div class="offices">
+          <div class="box1">Air India<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Air Mauritius<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">AirLines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+        </div>
+          <div class="offices">
+          <div class="box1">Asiana Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Bangkok Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Biman Bangladesh<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+        </div>
+          <div class="offices">
+          <div class="box1">Cathay Dragon<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Cathay Pacifi<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">China Eastern<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div></div> <div class="offices">
+            <div class="box1">China Southern<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Druk Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Emirates Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+          <div class="offices">
+            <div class="box1">Etihad Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Flights<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Fly Dubai<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+            <div class="offices">
+            <div class="box1">Go Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Gulf Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Himalaya Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+            <div class="offices">
+            <div class="box1">Indigo Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Jet Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Korean Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+            <div class="offices">
+            <div class="box1">Kuwait Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Malaysia Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Maldivian Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div></div> <div class="offices">
+              <div class="box1">Mihin Lanka Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Novoair<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Oman Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            </div>
+            <div class="offices">
+          <div class="box1">Air Arabia<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Air Asia<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Air Canada<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+        </div>
+          <div class="offices">
+          <div class="box1">Air India<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Air Mauritius<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">AirLines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+        </div>
+          <div class="offices">
+          <div class="box1">Asiana Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Bangkok Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Biman Bangladesh<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+        </div>
+          <div class="offices">
+          <div class="box1">Cathay Dragon<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">Cathay Pacifi<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          <div class="box1">China Eastern<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div></div> <div class="offices">
+            <div class="box1">China Southern<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Druk Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Emirates Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+          <div class="offices">
+            <div class="box1">Etihad Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Flights<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Fly Dubai<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+            <div class="offices">
+            <div class="box1">Go Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Gulf Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Himalaya Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+            <div class="offices">
+            <div class="box1">Indigo Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Jet Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Korean Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+          </div>
+            <div class="offices">
+            <div class="box1">Kuwait Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Malaysia Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            <div class="box1">Maldivian Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div></div> <div class="offices">
+              <div class="box1">Mihin Lanka Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Novoair<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Oman Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            </div>
+
+            <div class="offices">
+              <div class="box1">Pakistan Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Qutar Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Regent Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            </div>
+              <div class="offices">
+              <div class="box1">Salam Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Saudi Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Scoot Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            </div>
+              <div class="offices">
+              <div class="box1">Singapore AirLines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">SpiceJet AirLines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Srilankan Airlines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+            </div>
+              <div class="offices">
+              <div class="box1">Thai Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Thai Lion Air<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              <div class="box1">Travel Guide<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div></div> <div class="offices">
+                <div class="box1">US-BAngla AirLines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+                <a href="/Info/Turkish.html"><div class="box1">Turkish AirLines<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div></a>
+                <div class="box1">United Airways<br>Mo.no - 1234567890 <br> Address - Lorem, ipsum dolor. </div>
+              </div>
+              
+       
+        <p id="office" style="color: black;text-align: center; font-size: 50px;">-: Main Office :-</p>
+        <div class="maps" >
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.160864847152!2d90.42448811429819!3d23.812878092305112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7584293581d%3A0x4f85dbe2e286ee1a!2sFlyway%20Travel!5e0!3m2!1sen!2sbd!4v1634365459122!5m2!1sen!2sbd"
+          width="650" height="450" style= "align-self: center;  margin-bottom: 3vh;" allowfullscreen="" loading="lazy" ></iframe></div>
+      </div>
+     
+    </main>
+    <footer>
+        <p class="connect">Let's Connect! </p>
+        <div class="social">
+            <a href="#"> <i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div><br>
+        <p><a href="mailto:mdmahmud2640@gmail.com">mdmahmud2640@gmail.com</a></p>
+        <p> Copyrights &copy; 2021 All rights reserved@yatraworld.com</p>
+    </footer>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
